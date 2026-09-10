@@ -1,0 +1,66 @@
+<!-- SLIDE — PHARMACOMETRICS DEFINITION -->
+<section style="padding-top:28px; padding-bottom:20px;">
+  
+
+  <div style="display:flex; gap:40px; margin-top:1em; align-items:flex-start;">
+
+    <!-- Left: text content -->
+    <div style="flex:0 0 800px; display:flex; flex-direction:column; gap:24px;">
+
+      <p style="font-size:0.72em; line-height:1.6; color:var(--sub); margin:0;">
+        Pharmacometrics <span style="color:var(--muted); font-style:italic;">("measuring pharmacology")</span> is a discipline that integrates
+        <strong>biology, pharmacology, physiology and pathophysiology</strong> in mathematical and statistical
+        models to describe and quantify the interactions between drugs and patients.
+      </p>
+
+      <div class="fragment fade-in" style="border-left:2px solid var(--a1); padding-left:18px;">
+        <p style="font-size:0.62em; font-weight:600; color:var(--a1); margin:0 0 6px; text-transform:uppercase; letter-spacing:0.05em;">Models</p>
+        <p style="font-size:0.68em; line-height:1.6; color:var(--sub); margin:0;">
+          Pharmacometric models quantify the relationships between drug administered, covariates, exposure and
+          responses <span style="color:var(--muted); font-style:italic;">(biomarkers, efficacy, safety)</span>
+          as they evolve over time in both individual patients and populations.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: Venn diagram + footnote -->
+    <div style="flex:0 0 320px; display:flex; flex-direction:column; align-items:center; gap:12px;">
+      <svg viewBox="0 0 260 250" xmlns="http://www.w3.org/2000/svg" style="width:320px; height:310px; overflow:visible;">
+        <defs>
+          <clipPath id="venn-c1"><circle cx="95"  cy="100" r="78"/></clipPath>
+          <clipPath id="venn-c2"><circle cx="185" cy="100" r="78"/></clipPath>
+          <clipPath id="venn-c3"><circle cx="140" cy="172" r="78"/></clipPath>
+        </defs>
+
+        <!-- Three gray circles -->
+        <circle cx="95"  cy="100" r="78" fill="#9ca3af" fill-opacity="0.12" stroke="#9ca3af" stroke-width="1.5"/>
+        <circle cx="185" cy="100" r="78" fill="#9ca3af" fill-opacity="0.12" stroke="#9ca3af" stroke-width="1.5"/>
+        <circle cx="140" cy="172" r="78" fill="#9ca3af" fill-opacity="0.12" stroke="#9ca3af" stroke-width="1.5"/>
+
+        <!-- Indigo triple intersection (C3 clipped to C1 ∩ C2) -->
+        <g clip-path="url(#venn-c1)">
+          <g clip-path="url(#venn-c2)">
+            <circle cx="140" cy="172" r="78" fill="#4f46e5" fill-opacity="0.40"/>
+          </g>
+        </g>
+
+        <!-- Discipline labels -->
+        <text x="58"  y="72"  text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#6b7280">QSP</text>
+        <text x="202" y="72"  text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#6b7280">PBPK</text>
+        <text x="140" y="240" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#6b7280">PK/PD</text>
+
+        <!-- Center label -->
+        <text x="140" y="126" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#4f46e5">PMx</text>
+
+      </svg>
+      <p style="font-size:0.36em; color:var(--muted); line-height:1.6; margin:0; text-align:left; width:100%;">
+        <strong style="color:var(--muted);">PMx</strong> Pharmacometrics;
+        <strong style="color:var(--muted);">QSP</strong> Quantitative Systems Pharmacology;
+        <strong style="color:var(--muted);">PBPK</strong> Physiologically Based Pharmacokinetics;
+        <strong style="color:var(--muted);">PK/PD</strong> Population Pharmacokinetics / Pharmacodynamics
+      </p>
+    </div>
+
+  </div>
+</section>

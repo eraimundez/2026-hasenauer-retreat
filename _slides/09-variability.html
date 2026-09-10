@@ -1,0 +1,141 @@
+<!-- SLIDE — VARIABILITY -->
+<section style="padding-top:28px; padding-bottom:16px; font-size:0.82em;">
+  <h2>Capturing and explaining individual variability</h2>
+  
+
+  <div class="cols cols-2" style="margin-top:0.5em; align-items:start;">
+
+    <!-- Left: taxonomy + covariate -->
+    <div style="display:flex; flex-direction:column; gap:0;">
+      <div class="block" style="border-left:none;">
+        <div class="block__label">Variability Modelling</div>
+        <div class="block__text">
+          <strong>BSV (ω²)</strong> — between-subject: stable patient-level differences (genetics, body composition, disease). Primary target for covariate modelling.<br><br>
+          <strong>BOV (κ²)</strong> — between-occasion: within-patient fluctuations across periods (food, compliance, circadian).<br><br>
+          <strong>RUV (σ²)</strong> — residual: assay error, model misspecification.
+        </div>
+      </div>
+      <div class="block fragment fade-in" data-fragment-index="1" style="border-left:none;">
+        <div class="block__label">Covariate modelling</div>
+        <div class="block__text">
+          Covariates enter multiplicatively on individual parameters:
+          <div class="code-frag" style="margin:0.3em 0"><code>CL<sub>i</sub> = CL<sub>pop</sub> · (WT<sub>i</sub>/WT<sub>median</sub>)<sup>θ<sub>WT</sub></sup> · (1 + θ<sub>SEX</sub> · SEX<sub>i</sub>) · exp(η<sub>i</sub>)</code></div>
+          Informative covariates reduce unexplained BSV — enabling dose individualisation.
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: spaghetti plot -->
+    <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+      <svg viewBox="0 0 232 190" xmlns="http://www.w3.org/2000/svg" style="width:100%; font-family:Inter,sans-serif;">
+        <defs>
+          <clipPath id="sp-area"><rect x="42" y="12" width="180" height="143"/></clipPath>
+        </defs>
+
+        <!-- Plot background -->
+        <rect x="42" y="12" width="180" height="143" fill="#f9fafb" stroke="#e5e7eb" stroke-width="0.5"/>
+
+        <!-- Y gridlines (log scale): C = 1, 5, 10, 50, 100 -->
+        <line x1="42" y1="128" x2="222" y2="128" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+        <line x1="42" y1="93"  x2="222" y2="93"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+        <line x1="42" y1="78"  x2="222" y2="78"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+        <line x1="42" y1="43"  x2="222" y2="43"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+        <line x1="42" y1="27"  x2="222" y2="27"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+        <!-- X gridlines at weeks 1, 2, 3 -->
+        <line x1="85"  y1="12" x2="85"  y2="155" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+        <line x1="128" y1="12" x2="128" y2="155" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+        <line x1="171" y1="12" x2="171" y2="155" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+        <!-- Axes -->
+        <line x1="42" y1="155" x2="222" y2="155" stroke="#6b7280" stroke-width="1"/>
+        <line x1="42" y1="12"  x2="42"  y2="155" stroke="#6b7280" stroke-width="1"/>
+
+        <!-- Y axis labels -->
+        <text x="39" y="131" text-anchor="end" font-size="7" fill="#9ca3af">1</text>
+        <text x="39" y="96"  text-anchor="end" font-size="7" fill="#9ca3af">5</text>
+        <text x="39" y="81"  text-anchor="end" font-size="7" fill="#9ca3af">10</text>
+        <text x="39" y="46"  text-anchor="end" font-size="7" fill="#9ca3af">50</text>
+        <text x="39" y="30"  text-anchor="end" font-size="7" fill="#9ca3af">100</text>
+
+        <!-- X axis labels -->
+        <text x="42"  y="163" text-anchor="middle" font-size="7" fill="#9ca3af">0</text>
+        <text x="85"  y="163" text-anchor="middle" font-size="7" fill="#9ca3af">1</text>
+        <text x="128" y="163" text-anchor="middle" font-size="7" fill="#9ca3af">2</text>
+        <text x="171" y="163" text-anchor="middle" font-size="7" fill="#9ca3af">3</text>
+        <text x="213" y="163" text-anchor="middle" font-size="7" fill="#9ca3af">4</text>
+
+        <!-- Axis titles -->
+        <text x="132" y="173" text-anchor="middle" font-size="7" fill="#6b7280">Time (weeks)</text>
+        <text transform="rotate(-90)" x="-83" y="9" text-anchor="middle" font-size="7" fill="#6b7280">Conc. (ng/mL)</text>
+
+        <!-- Initial: all individual curves in gray -->
+        <g clip-path="url(#sp-area)" fill="none" stroke="#d1d5db" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round">
+          <polyline points="42,18  48,28  66,46  85,62  128,76  171,85  213,91"/>
+          <polyline points="42,22  48,33  66,52  85,68  128,83  171,93  213,100"/>
+          <polyline points="42,15  48,25  66,42  85,58  128,72  171,81  213,87"/>
+          <polyline points="42,25  48,36  66,55  85,71  128,86  171,96  213,103"/>
+          <polyline points="42,20  48,30  66,49  85,65  128,80  171,89  213,96"/>
+          <polyline points="42,35  48,46  66,65  85,82  128,97  171,107 213,114"/>
+          <polyline points="42,40  48,51  66,70  85,87  128,102 171,112 213,119"/>
+          <polyline points="42,44  48,55  66,74  85,91  128,106 171,116 213,123"/>
+          <polyline points="42,38  48,49  66,68  85,84  128,99  171,109 213,116"/>
+          <polyline points="42,30  48,40  66,60  85,76  128,91  171,101 213,108"/>
+        </g>
+
+        <!-- Overall population mean — black (always visible) -->
+        <polyline clip-path="url(#sp-area)"
+          points="42,27 48,37 66,57 85,74 106,85 128,91 149,96 171,99 192,102 213,105"
+          fill="none" stroke="#111827" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+
+        <!-- Initial legend -->
+        <rect x="126" y="14" width="92" height="26" fill="white" fill-opacity="0.88" rx="2"/>
+        <line x1="129" y1="22" x2="140" y2="22" stroke="#d1d5db" stroke-width="1.5"/>
+        <text x="143" y="25" font-size="6.5" fill="#9ca3af">Individual prediction</text>
+        <line x1="129" y1="33" x2="140" y2="33" stroke="#111827" stroke-width="2"/>
+        <text x="143" y="36" font-size="6.5" fill="#374151">Population prediction</text>
+
+        <!-- Fragment: sex coloring -->
+        <g class="fragment fade-in" data-fragment-index="2">
+          <!-- Female colored curves — teal -->
+          <g clip-path="url(#sp-area)" fill="none" stroke="#99d9d5" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round">
+            <polyline points="42,18  48,28  66,46  85,62  128,76  171,85  213,91"/>
+            <polyline points="42,22  48,33  66,52  85,68  128,83  171,93  213,100"/>
+            <polyline points="42,15  48,25  66,42  85,58  128,72  171,81  213,87"/>
+            <polyline points="42,25  48,36  66,55  85,71  128,86  171,96  213,103"/>
+            <polyline points="42,20  48,30  66,49  85,65  128,80  171,89  213,96"/>
+          </g>
+          <!-- Male colored curves — light indigo -->
+          <g clip-path="url(#sp-area)" fill="none" stroke="#a5b4fc" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round">
+            <polyline points="42,35  48,46  66,65  85,82  128,97  171,107 213,114"/>
+            <polyline points="42,40  48,51  66,70  85,87  128,102 171,112 213,119"/>
+            <polyline points="42,44  48,55  66,74  85,91  128,106 171,116 213,123"/>
+            <polyline points="42,38  48,49  66,68  85,84  128,99  171,109 213,116"/>
+            <polyline points="42,30  48,40  66,60  85,76  128,91  171,101 213,108"/>
+          </g>
+          <!-- Overall population mean redrawn on top — black -->
+          <polyline clip-path="url(#sp-area)"
+            points="42,27 48,37 66,57 85,74 106,85 128,91 149,96 171,99 192,102 213,105"
+            fill="none" stroke="#111827" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <!-- Female mean — teal dashed -->
+          <polyline clip-path="url(#sp-area)"
+            points="42,20 48,30 66,49 85,65 106,76 128,83 149,88 171,91 192,94 213,96"
+            fill="none" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="4,2" stroke-linejoin="round" stroke-linecap="round"/>
+          <!-- Male mean — indigo dashed -->
+          <polyline clip-path="url(#sp-area)"
+            points="42,37 48,47 66,67 85,84 106,95 128,101 149,106 171,109 192,112 213,114"
+            fill="none" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="4,2" stroke-linejoin="round" stroke-linecap="round"/>
+          <!-- Extended legend box -->
+          <rect x="126" y="12" width="92" height="38" fill="white" fill-opacity="0.95" rx="2"/>
+          <line x1="129" y1="21" x2="140" y2="21" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <text x="143" y="24" font-size="6.5" fill="#0d9488">Female mean</text>
+          <line x1="129" y1="31" x2="140" y2="31" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <text x="143" y="34" font-size="6.5" fill="#4f46e5">Male mean</text>
+          <line x1="129" y1="41" x2="140" y2="41" stroke="#111827" stroke-width="2"/>
+          <text x="143" y="44" font-size="6.5" fill="#374151">Population prediction</text>
+        </g>
+      </svg>
+    </div>
+
+  </div>
+</section>

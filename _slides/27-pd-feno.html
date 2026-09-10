@@ -1,0 +1,35 @@
+<!-- SLIDE — PD MODEL: FeNO -->
+<section style="padding-top:28px; padding-bottom:20px; font-size:0.82em;">
+  <h2>FeNO Model</h2>
+
+  <!-- Data block -->
+  <div class="code-frag" style="border-color:var(--a2); margin-bottom:0.5em;">
+    <div class="cf-label" style="color:var(--a2);">PD data</div>
+    <span style="font-size:0.7em;"><strong>531 patients</strong> (placebo 138; treated 393) <br> continuous biomarker, 6 timepoints</span>
+  </div>
+
+  <div class="fragment fade-in" style="margin-top:0.4em;">
+  <div class="cols cols-6040" style="align-items:start; grid-template-columns: 55% 43%;">
+    <div>
+      <div class="code-frag" style="border-color:var(--a2);">
+        <div class="cf-label" style="color:var(--a2);">Direct E<sub>max</sub> on log-transformed FeNO</div>
+        <code style="line-height:1.8;">log FeNO(t) = log(Base) + log(E<sub>max</sub>) · C<sub>p</sub>(t) / (EC<sub>50</sub> + C<sub>p</sub>(t)) + ε<br>
+<small>Direct response: no delay — onset consistent with first measurement at 4 weeks <br> C<sub>p</sub>(t): post-hoc individual PK predictions</small></code>
+      </div>
+      <ul style="margin-top:0.6em;">
+        <li>Emax parameterized as the maximal fold-change (ratio) </li>
+        <li>C<sub>p</sub>(t) driven by 2-cpt popPK model post-hoc estimates</li>
+        <li>IIV on baseline FeNO (CV% = 69.5%) and E<sub>max</sub> (CV% = 35.4%)</li>
+        <li>Residual variability: additive on log scale</li>
+      </ul>
+      <p style="font-size:0.64em; font-weight:600; color:var(--muted); margin-top:0.6em;">Covariate search</p>
+      <p>- Baseline eosinophil count on baseline FeNO and E<sub>max</sub><br>- Baseline periostin on baseline FeNO</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:6px;">
+      <p style="font-size:0.56em; font-weight:600; color:var(--muted); margin:0;">Visual Predictive Check</p>
+      <img src="_img/vpc-feno.svg" alt="FeNO VPC" style="width:100%; display:block;"/>
+      <p style="font-size:0.42em; color:var(--muted); margin:0.3em 0 0.6em; line-height:1.4;">Black lines: observed median; gray shading: 90% CI of model-predicted median. Blue lines: observed 10th/90th percentiles; blue shading: corresponding 90% CIs of model-predicted percentiles.</p>
+    </div>
+  </div>
+  </div>
+</section>

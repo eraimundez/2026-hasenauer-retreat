@@ -1,0 +1,75 @@
+<!-- SLIDE — ABOUT ME -->
+<section style="padding-top:28px; padding-bottom:20px;">
+  <h2>About me</h2>
+
+  <div style="display:flex; gap:40px; margin-top:0.9em; align-items:flex-start;">
+
+    <!-- Left: existing timeline -->
+    <div style="display:flex; flex-direction:column; gap:20px; flex:0 0 640px;">
+
+      <!-- 2023 – now / 2023 – 2026 -->
+      <div style="position:relative;">
+        <!-- indigo/active version: stays in flow (keeps height), fades to opacity:0 -->
+        <div class="fragment fade-out" data-fragment-index="1"
+             style="display:grid; grid-template-columns:96px 1fr; align-items:start;">
+          <span style="font-size:0.58em; font-weight:600; color:var(--a1); text-align:right; padding-right:18px; padding-top:5px; line-height:1.3; display:block;">2023 – now</span>
+          <div style="border-left:2px solid var(--a1); padding-left:18px;">
+            <p style="font-size:0.72em; font-weight:700; color:var(--a1); margin:0 0 2px;">Pharmacometrician</p>
+            <p style="font-size:0.62em; color:var(--a1); margin:0 0 2px; font-style:italic;">Sanofi</p>
+          </div>
+        </div>
+        <!-- muted/older version: absolutely overlaid, fades in -->
+        <div class="fragment fade-in" data-fragment-index="1"
+             style="position:absolute; top:0; left:0; right:0; display:grid; grid-template-columns:96px 1fr; align-items:start;">
+          <span style="font-size:0.58em; color:var(--muted); text-align:right; padding-right:18px; padding-top:5px; line-height:1.3; display:block;">2023 – 2026</span>
+          <div style="border-left:1.5px solid var(--rule-dk); padding-left:18px;">
+            <p style="font-size:0.72em; font-weight:400; color:var(--sub); margin:0 0 2px;">Pharmacometrician</p>
+            <p style="font-size:0.62em; color:var(--muted); margin:0 0 2px; font-style:italic;">Sanofi</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2017 – 2023 -->
+      <div style="display:grid; grid-template-columns:96px 1fr; align-items:start;">
+        <span style="font-size:0.58em; color:var(--muted); text-align:right; padding-right:18px; padding-top:5px; line-height:1.3; display:block;">2017 – 2023</span>
+        <div style="border-left:1.5px solid var(--rule-dk); padding-left:18px;">
+          <p style="font-size:0.72em; font-weight:400; color:var(--sub); margin:0 0 2px;">PhD Mathematics&nbsp; &nbsp; <span style="color:var(--text); font-weight:600;">@ Hasenauer lab 👋</span></p>
+          <p style="font-size:0.62em; color:var(--muted); margin:0; font-style:italic;">Technische Universität München </p>
+        </div>
+      </div>
+
+      <!-- 2014 – 2016 -->
+      <div style="display:grid; grid-template-columns:96px 1fr; align-items:start;">
+        <span style="font-size:0.58em; color:var(--muted); text-align:right; padding-right:18px; padding-top:5px; line-height:1.3; display:block;">2014 – 2016</span>
+        <div style="border-left:1px solid var(--rule-dk); padding-left:18px;">
+          <p style="font-size:0.72em; font-weight:400; color:var(--sub); margin:0 0 2px;">MSc Bioinformatics</p>
+          <p style="font-size:0.62em; color:var(--muted); margin:0; font-style:italic;">Universitat Pompeu Fabra, Barcelona</p>
+        </div>
+      </div>
+
+      <!-- 2010 – 2014 -->
+      <div style="display:grid; grid-template-columns:96px 1fr; align-items:start;">
+        <span style="font-size:0.58em; color:var(--muted); text-align:right; padding-right:18px; padding-top:5px; line-height:1.3; display:block;">2010 – 2014</span>
+        <div style="border-left:1px solid var(--rule); padding-left:18px;">
+          <p style="font-size:0.72em; font-weight:400; color:var(--sub); margin:0 0 2px;">BSc Biochemistry</p>
+          <p style="font-size:0.62em; color:var(--muted); margin:0; font-style:italic;">Universidad Autónoma de Madrid</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: new 2027 entry, revealed on the same step -->
+    <div class="fragment fade-in" data-fragment-index="1"
+         style="flex:0 0 auto; padding-left:32px;">
+      <div style="display:grid; grid-template-columns:96px 1fr; align-items:start;">
+        <span style="font-size:0.58em; font-weight:600; color:var(--a1); text-align:right; padding-right:18px; padding-top:5px; line-height:1.3; display:block;">2027 – onwards</span>
+        <div style="border-left:2px solid var(--a1); padding-left:18px;">
+          <p style="font-size:0.72em; font-weight:700; color:var(--a1); margin:0 0 2px;">PMx Consultant</p>
+          <p style="font-size:0.62em; color:var(--a1); margin:0 0 2px; font-style:italic;">Certara</p>
+        </div>
+      </div>
+      <img src="_img/spain.jpg" style="margin-top:16px; width:40%; border-radius:6px; display:block;" />
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,47 @@
+<!-- SLIDE 3 — CORE LOOP -->
+<section>
+  <h2>From data to decisions</h2>
+  <div style="display:flex; align-items:center; justify-content:center;">
+      <svg viewBox="0 0 180 295" xmlns="http://www.w3.org/2000/svg" style="width:380px; display:block; margin:0 auto;">
+        <defs>
+          <marker id="arr-fwd" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+            <polygon points="0 0,7 2.5,0 5" fill="#111827"/>
+          </marker>
+          <marker id="arr-back" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+            <polygon points="0 0,7 2.5,0 5" fill="#d1d5db"/>
+          </marker>
+        </defs>
+
+        <!-- Data (filled) -->
+        <rect x="25" y="8"   width="120" height="36" fill="#111827" rx="2"/>
+        <text x="85" y="30"  text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="Inter,Arial,sans-serif">Data</text>
+
+        <line x1="85" y1="44" x2="85" y2="66" stroke="#111827" stroke-width="1.5" marker-end="url(#arr-fwd)"/>
+
+        <!-- Model (outlined) -->
+        <rect x="25" y="70"  width="120" height="36" fill="none" stroke="#111827" stroke-width="1.5" rx="2"/>
+        <text x="85" y="92"  text-anchor="middle" fill="#111827" font-size="13" font-weight="600" font-family="Inter,Arial,sans-serif">Model</text>
+
+        <line x1="85" y1="106" x2="85" y2="128" stroke="#111827" stroke-width="1.5" marker-end="url(#arr-fwd)"/>
+
+        <!-- Insight (outlined) -->
+        <rect x="25" y="132" width="120" height="36" fill="none" stroke="#111827" stroke-width="1.5" rx="2"/>
+        <text x="85" y="154" text-anchor="middle" fill="#111827" font-size="13" font-weight="600" font-family="Inter,Arial,sans-serif">Insight</text>
+
+        <line x1="85" y1="168" x2="85" y2="190" stroke="#111827" stroke-width="1.5" marker-end="url(#arr-fwd)"/>
+
+        <!-- Decision (filled) -->
+        <rect x="25" y="194" width="120" height="36" fill="#111827" rx="2"/>
+        <text x="85" y="216" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="Inter,Arial,sans-serif">Decision</text>
+
+        <!-- return arrow: dashed gray on the right -->
+        <path d="M 145,212 L 163,212 L 163,26 L 145,26"
+              fill="none" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="4,3"
+              marker-end="url(#arr-back)"/>
+
+        <!-- "next cycle" rotated label -->
+        <text x="170" y="132" text-anchor="middle" fill="#9ca3af" font-size="8"
+              font-family="Inter,Arial,sans-serif" transform="rotate(90 170 132)">next cycle</text>
+      </svg>
+  </div>
+</section>

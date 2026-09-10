@@ -1,0 +1,39 @@
+<!-- SLIDE 20 — AI WORKFLOW -->
+<section style="padding-top:28px; padding-bottom:20px; font-size:0.95em;">
+  <h2>Examples of GenAI-assisted PMx tasks</h2>
+
+  <div class="cols cols-3" style="margin-top:0.6em;">
+    <div class="block block--a1">
+      <p style="font-size:0.55em; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.07em; margin:0 0 4px;">Step 01 — Data QC</p>
+      <div class="block__text">Agent + curated prompts → R script with 16 sanity checks + auto-generated Word report</div>
+    </div>
+    <div class="block block--a1">
+      <p style="font-size:0.55em; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.07em; margin:0 0 4px;">Step 02 — EDA (PK &amp; PD)</p>
+      <div class="block__text">Agent → figures, demographics table, PK/PD profiles + auto-generated Word report</div>
+    </div>
+    <div class="block block--a1">
+      <p style="font-size:0.55em; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.07em; margin:0 0 4px;">Step 03 — Modeling</p>
+      <div class="block__text">Agent + curated prompts → NONMEM control file + nlmixr2 conversion</div>
+    </div>
+  </div>
+
+  <div class="code-frag" style="border-color:var(--a1); margin-top:1em;">
+    <div class="cf-label" style="color:var(--a1);">Best practices</div>
+    <span style="font-size:0.62em; line-height:1.7; display:block;">
+      <strong>Context injection</strong><br>
+      <ul style="margin:0.1em 0 0.4em; padding-left:1.2em;">
+        <li>Structured JSON schema removes column ambiguity</li>
+        <li>AI knows your data before writing a line of code</li>
+      </ul><br>
+      <strong>"Deterministic" outputs</strong><br>
+      <ul style="margin:0.1em 0 0.4em; padding-left:1.2em;">
+        <li>Curated prompts specify structure end-to-end</li>
+        <li>From analysis code to report format, layout, and narrative sections</li>
+      </ul><br>
+      <strong>Human-in-the-loop</strong><br>
+      <ul style="margin:0.1em 0 0; padding-left:1.2em;">
+        <li>Break the workflow at meaningful checkpoints — inspect outputs before chaining to the next step</li>
+      </ul>
+    </span>
+  </div>
+</section>

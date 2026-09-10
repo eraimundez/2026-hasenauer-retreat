@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharmacometrics in Drug Development</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --text:    #111827;
+      --sub:     #374151;
+      --muted:   #9ca3af;
+      --rule:    #e5e7eb;
+      --rule-dk: #d1d5db;
+      --bg:      #ffffff;
+      --mono:    'IBM Plex Mono', 'Menlo', 'Consolas', monospace;
+      --code-bg: #f9fafb;
+      --a1:      #4f46e5;
+      --a2:      #0d9488;
+      --a3:      #d97706;
+      --a4:      #e11d48;
+    }
+
+    /* ── Base ─────────────────────────────────────────────────── */
+    .reveal {
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 36px;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .reveal .slides section {
+      text-align: left;
+      padding: 36px 64px 24px;
+    }
+
+    /* ── Headings ─────────────────────────────────────────────── */
+    .reveal h1, .reveal h2, .reveal h3 {
+      text-transform: none;
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+    }
+
+    .reveal h1 {
+      font-size: 2.1em;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--text);
+    }
+
+    .reveal h2 {
+      font-size: 1.15em;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      border-bottom: 1px solid var(--rule-dk);
+      padding-bottom: 0.3em;
+      margin-bottom: 0.65em;
+    }
+
+    .reveal h3 {
+      font-size: 0.62em;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5em;
+      margin-top: -0.4em;
+    }
+
+    /* ── Body ─────────────────────────────────────────────────── */
+    .reveal p, .reveal li {
+      font-size: 0.68em;
+      line-height: 1.7;
+      color: var(--sub);
+    }
+
+    .reveal ul {
+      margin-left: 1.1em;
+    }
+
+    .reveal ul li {
+      margin-bottom: 0.3em;
+    }
+
+    .reveal ul ul li {
+      font-size: 0.92em;
+      color: var(--muted);
+    }
+
+    /* ── Inline helpers ───────────────────────────────────────── */
+    .accent { color: var(--a1); font-weight: 600; }
+    .muted  { color: var(--muted); }
+    .mono {
+      font-family: var(--mono);
+      font-size: 0.82em;
+      background: var(--code-bg);
+      border: 1px solid var(--rule);
+      padding: 0.08em 0.32em;
+      border-radius: 3px;
+      color: var(--text);
+    }
+
+    /* ── Figure placeholder ───────────────────────────────────── */
+    .fig {
+      border: 1px solid var(--rule-dk);
+      background: var(--code-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.55em;
+      font-style: italic;
+      text-align: center;
+      padding: 16px;
+    }
+    .fig-sm   { height: 130px; }
+    .fig-md   { height: 195px; }
+    .fig-lg   { height: 270px; }
+    .fig-full { height: 330px; width: 100%; }
+
+    /* ── Layout helpers ───────────────────────────────────────── */
+    .cols {
+      display: grid;
+      gap: 32px;
+      align-items: start;
+    }
+    .cols-2    { grid-template-columns: 1fr 1fr; }
+    .cols-3    { grid-template-columns: 1fr 1fr 1fr; }
+    .cols-6040 { grid-template-columns: 60% 38%; }
+    .cols-4060 { grid-template-columns: 38% 60%; }
+
+    /* ── Table ────────────────────────────────────────────────── */
+    .reveal table {
+      font-size: 0.6em;
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 0.5em;
+    }
+    .reveal table th {
+      font-weight: 700;
+      color: var(--text);
+      padding: 7px 14px;
+      text-align: left;
+      border-bottom: 2px solid var(--text);
+      background: none;
+    }
+    .reveal table td {
+      padding: 6px 14px;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top;
+      color: var(--sub);
+    }
+    .reveal table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* ── Callout ──────────────────────────────────────────────── */
+    .callout {
+      border-left: 2px solid var(--a1);
+      padding: 10px 20px;
+      margin: 0.8em 0;
+    }
+    .callout p {
+      font-size: 0.68em;
+      margin: 0;
+      font-style: italic;
+      color: var(--sub);
+    }
+
+    /* ── Equation block ───────────────────────────────────────── */
+    .eq {
+      font-family: var(--mono);
+      font-size: 0.65em;
+      background: var(--code-bg);
+      border: 1px solid var(--rule);
+      padding: 14px 20px;
+      margin: 0.6em 0;
+      line-height: 2;
+      color: var(--text);
+    }
+
+    /* ── Tags ─────────────────────────────────────────────────── */
+    .tag {
+      display: inline-block;
+      font-size: 0.52em;
+      font-weight: 500;
+      color: var(--sub);
+      border: 1px solid var(--rule-dk);
+      padding: 2px 10px;
+      margin: 2px 3px 2px 0;
+      vertical-align: middle;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Title slide ──────────────────────────────────────────── */
+    .title-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      padding: 0 64px 56px !important;
+      border-top: 4px solid var(--a1);
+    }
+    .title-slide .kicker {
+      font-size: 0.5em;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      margin-bottom: 0.8em;
+    }
+    .title-slide h1 {
+      font-size: 2.4em;
+      line-height: 1.05;
+      margin-bottom: 0;
+    }
+    .title-slide .rule {
+      width: 100%;
+      height: 1px;
+      background: var(--rule-dk);
+      margin: 1.4em 0 1em;
+    }
+    .title-slide .byline {
+      font-size: 0.58em;
+      color: var(--muted);
+      font-weight: 400;
+      line-height: 1.9;
+    }
+
+    /* ── Section divider ──────────────────────────────────────── */
+    .divider-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 0 64px !important;
+      border-left: 4px solid var(--a1);
+    }
+    .divider-slide .section-num {
+      font-size: 4.5em;
+      font-weight: 800;
+      color: var(--rule-dk);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.05em;
+    }
+    .divider-slide h2 {
+      border: none;
+      font-size: 1.5em;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.35em;
+      padding-bottom: 0;
+    }
+    .divider-slide p {
+      font-size: 0.65em;
+      color: var(--muted);
+    }
+
+    /* ── Progress / slide number ──────────────────────────────── */
+    .reveal .progress { background: var(--rule); height: 2px; }
+    .reveal .progress span { background: var(--a1); }
+    .reveal .slide-number {
+      font-size: 0.46em;
+      font-family: var(--mono);
+      color: var(--muted);
+      background: transparent;
+      right: 20px;
+      bottom: 14px;
+    }
+
+    /* ── Time badge ───────────────────────────────────────────── */
+    .time-badge {
+      display: inline-block;
+      font-size: 0.48em;
+      font-weight: 500;
+      color: var(--muted);
+      border: 1px solid var(--rule-dk);
+      padding: 2px 10px;
+      margin-left: 10px;
+      vertical-align: middle;
+      font-family: var(--mono);
+    }
+
+    /* ── Block component ─────────────────────────────────────── */
+    .block {
+      border-left: 2px solid var(--rule-dk);
+      padding: 7px 14px;
+      margin: 0.35em 0;
+    }
+    .block--a1 { border-left-color: var(--a1); }
+    .block--a2 { border-left-color: var(--a2); }
+    .block--a3 { border-left-color: var(--a3); }
+    .block--a4 { border-left-color: var(--a4); }
+    .block .block__label {
+      font-family: var(--mono);
+      font-size: 0.5em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+    .block .block__text {
+      font-size: 0.62em;
+      line-height: 1.65;
+      color: var(--sub);
+    }
+    .block .block__text strong { font-weight: 600; color: var(--text); }
+    .block .block__text em { font-style: italic; }
+
+    /* ── Code fragment ────────────────────────────────────────── */
+    .code-frag {
+      background: var(--code-bg);
+      border: 1px solid var(--rule);
+      padding: 6px 12px;
+      margin: 0.25em 0;
+    }
+    .code-frag .cf-label {
+      font-family: var(--mono);
+      font-size: 0.46em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .code-frag code {
+      font-family: var(--mono);
+      font-size: 0.58em;
+      color: var(--text);
+      line-height: 1.7;
+      display: block;
+    }
+    .code-frag code em { font-style: normal; font-weight: 600; color: var(--a1); }
+    .code-frag code small { color: var(--muted); }
+
+    /* ── Hub-spoke ────────────────────────────────────────────── */
+    .hub {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 8px;
+      font-size: 0.58em;
+      text-align: center;
+    }
+    .hub-center {
+      grid-column: 2;
+      grid-row: 2;
+      background: var(--text);
+      color: white;
+      padding: 12px 8px;
+      font-weight: 700;
+      font-size: 1.05em;
+    }
+    .hub-node {
+      border: 1px solid var(--rule-dk);
+      padding: 10px 6px;
+      color: var(--sub);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">

@@ -1,0 +1,85 @@
+<!-- SLIDE — WORKFLOW MODEL BUILDING -->
+<section style="padding-top:28px; padding-bottom:20px;">
+  <h2>Typical project workflow</h2>
+
+  <!-- progress indicator -->
+  <div style="display:flex; align-items:center; gap:0; margin-bottom:0.7em; font-size:0.52em;">
+    <span style="display:flex; align-items:center; gap:6px; color:var(--muted);">
+      <span style="width:10px; height:10px; border-radius:50%; border:1.5px solid var(--muted); flex-shrink:0; display:inline-block;"></span>
+      Before modeling
+    </span>
+    <span style="flex:1; height:1px; background:var(--text); margin:0 10px;"></span>
+    <span style="display:flex; align-items:center; gap:6px; font-weight:700; color:var(--text);">
+      <span style="width:10px; height:10px; border-radius:50%; background:var(--text); flex-shrink:0; display:inline-block;"></span>
+      Model building
+    </span>
+    <span style="flex:1; height:1px; background:var(--rule-dk); margin:0 10px;"></span>
+    <span style="display:flex; align-items:center; gap:6px; color:var(--muted);">
+      <span style="width:10px; height:10px; border-radius:50%; border:1.5px solid var(--muted); flex-shrink:0; display:inline-block;"></span>
+      After modeling
+    </span>
+  </div>
+
+  <!-- content -->
+  <div style="display:flex; flex-direction:column; gap:20px;">
+
+    <p style="font-size:0.55em; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.07em; margin:0 0 6px;">Step 03 — Analysis pipeline</p>
+    <div style="display:flex; align-items:center; justify-content:center;">
+      <svg viewBox="0 0 560 130" xmlns="http://www.w3.org/2000/svg" style="width:100%; font-family:Inter,sans-serif;">
+        <defs>
+          <marker id="wf-arr" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0,6 2.5,0 5" fill="#9ca3af"/>
+          </marker>
+        </defs>
+
+        <!-- Connector lines -->
+        <line x1="62"  y1="42" x2="98"  y2="42" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#wf-arr)"/>
+        <line x1="155" y1="42" x2="191" y2="42" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#wf-arr)"/>
+        <line x1="248" y1="42" x2="284" y2="42" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#wf-arr)"/>
+        <line x1="341" y1="42" x2="377" y2="42" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#wf-arr)"/>
+        <line x1="434" y1="42" x2="470" y2="42" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#wf-arr)"/>
+
+        <!-- Step 1 — Environment (gray-blue) -->
+        <circle cx="42"  cy="42" r="30" fill="#6b7280"/>
+        <text x="42"  y="47" text-anchor="middle" font-size="20" font-weight="700" fill="white">1</text>
+        <text x="42"  y="83" text-anchor="middle" font-size="8.5" font-weight="700" fill="#111827">Project Setup</text>
+        <text x="42"  y="94" text-anchor="middle" font-size="7.5" fill="#6b7280">bash · renv</text>
+
+        <!-- Step 2 — Data Storage (teal) -->
+        <circle cx="135" cy="42" r="30" fill="#0d9488"/>
+        <text x="135" y="47" text-anchor="middle" font-size="20" font-weight="700" fill="white">2</text>
+        <text x="135" y="83" text-anchor="middle" font-size="8.5" font-weight="700" fill="#111827">Data Storage</text>
+        <text x="135" y="94" text-anchor="middle" font-size="7.5" fill="#6b7280">HPC · read-only</text>
+
+        <!-- Step 3 — Data QC (teal) -->
+        <circle cx="228" cy="42" r="30" fill="#0d9488"/>
+        <text x="228" y="47" text-anchor="middle" font-size="20" font-weight="700" fill="white">3</text>
+        <text x="228" y="83" text-anchor="middle" font-size="8.5" font-weight="700" fill="#111827">Data QC</text>
+        <text x="228" y="94" text-anchor="middle" font-size="7.5" fill="#6b7280">R · Julia</text>
+
+        <!-- Step 4 — Modeling (salmon/accent) -->
+        <circle cx="321" cy="42" r="30" fill="#e07b5a"/>
+        <text x="321" y="47" text-anchor="middle" font-size="20" font-weight="700" fill="white">4</text>
+        <text x="321" y="83" text-anchor="middle" font-size="8.5" font-weight="700" fill="#111827">Modeling</text>
+        <text x="321" y="94" text-anchor="middle" font-size="7.5" fill="#6b7280">NONMEM · Pumas</text>
+
+        <!-- Step 5 — Post-Processing (teal) -->
+        <circle cx="414" cy="42" r="30" fill="#0d9488"/>
+        <text x="414" y="47" text-anchor="middle" font-size="20" font-weight="700" fill="white">5</text>
+        <text x="414" y="83" text-anchor="middle" font-size="8.5" font-weight="700" fill="#111827">Post-Processing</text>
+        <text x="414" y="94" text-anchor="middle" font-size="7.5" fill="#6b7280">R · Julia</text>
+
+        <!-- Step 6 — Reporting (gold) -->
+        <circle cx="507" cy="42" r="30" fill="#d97706"/>
+        <text x="507" y="47" text-anchor="middle" font-size="20" font-weight="700" fill="white">6</text>
+        <text x="507" y="83" text-anchor="middle" font-size="8.5" font-weight="700" fill="#111827">Reporting</text>
+        <text x="507" y="94" text-anchor="middle" font-size="7.5" fill="#6b7280">Quarto + Typst → PDF</text>
+      </svg>
+    </div>
+
+    <div style="max-width:1500px; margin:0 auto;">
+      <p>All steps must be F.A.I.R. and documented to be later reported to health authorities</p>
+    </div>
+
+  </div>
+</section>

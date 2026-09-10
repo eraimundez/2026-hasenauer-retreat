@@ -1,0 +1,97 @@
+<!-- SLIDE 5 — DAILY ROUTINE -->
+<section style="padding-top:28px; padding-bottom:20px;">
+  <h2>My day-to-day workload</h2>
+
+  <div class="cols" style="grid-template-columns:42% 56%; gap:28px; margin-top:0.5em; align-items:start;">
+
+    <!-- left: donut chart -->
+    <div style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+
+      <svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:320px; display:block;">
+
+        <!-- Segment 1: 40% Modeling — indigo, -90° → 54° -->
+        <path d="M 130 22 A 108 108 0 0 1 193.50 217.42 L 160.57 172.07 A 52 52 0 0 0 130 78 Z"
+              style="fill:var(--a1)" stroke="white" stroke-width="2"/>
+
+        <!-- Segment 2: 30% Meetings — teal, 54° → 162° -->
+        <path d="M 193.50 217.42 A 108 108 0 0 1 27.27 163.37 L 80.54 146.07 A 52 52 0 0 0 160.57 172.07 Z"
+              style="fill:var(--a2)" stroke="white" stroke-width="2"/>
+
+        <!-- Segment 3: 20% Documentation — amber, 162° → 234° -->
+        <path d="M 27.27 163.37 A 108 108 0 0 1 66.50 42.58 L 99.43 87.93 A 52 52 0 0 0 80.54 146.07 Z"
+              style="fill:var(--a3)" stroke="white" stroke-width="2"/>
+
+        <!-- Segment 4: 10% Learning — gray, 234° → 270° -->
+        <path d="M 66.50 42.58 A 108 108 0 0 1 130 22 L 130 78 A 52 52 0 0 0 99.43 87.93 Z"
+              style="fill:var(--muted)" stroke="white" stroke-width="2"/>
+
+        <!-- % labels in each segment -->
+        <text x="202" y="109" text-anchor="middle" fill="white" font-size="13" font-weight="700" font-family="Inter,sans-serif">40%</text>
+        <text x="107" y="210" text-anchor="middle" fill="white" font-size="13" font-weight="700" font-family="Inter,sans-serif">30%</text>
+        <text x="52"  y="109" text-anchor="middle" fill="white" font-size="13" font-weight="700" font-family="Inter,sans-serif">20%</text>
+        <text x="107" y="54"  text-anchor="middle" fill="white" font-size="11" font-weight="700" font-family="Inter,sans-serif">10%</text>
+
+      </svg>
+
+      <!-- legend -->
+      <div style="display:flex; flex-direction:column; gap:4px; width:100%; max-width:320px;">
+        <div style="display:flex; align-items:center; gap:7px;">
+          <span style="width:8px; height:8px; border-radius:2px; background:var(--a1); flex-shrink:0;"></span>
+          <span style="font-size:0.44em; color:var(--sub);">Hands-on Modeling / Analysis</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:7px;">
+          <span style="width:8px; height:8px; border-radius:2px; background:var(--a2); flex-shrink:0;"></span>
+          <span style="font-size:0.44em; color:var(--sub);">Cross-functional Exchange</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:7px;">
+          <span style="width:8px; height:8px; border-radius:2px; background:var(--a3); flex-shrink:0;"></span>
+          <span style="font-size:0.44em; color:var(--sub);">Documentation &amp; Reporting</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:7px;">
+          <span style="width:8px; height:8px; border-radius:2px; background:var(--muted); flex-shrink:0;"></span>
+          <span style="font-size:0.44em; color:var(--sub);">Learning</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- right: bullet groups with matching accent borders -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+
+      <div style="border-left:3px solid var(--a1); padding-left:14px;">
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:3px;">
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a1); font-weight:700; flex-shrink:0;">→</span><span>Develop and refine population PK/PD models</span></li>
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a1); font-weight:700; flex-shrink:0;">→</span><span>Run model simulations for trial design or dose selection</span></li>
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a1); font-weight:700; flex-shrink:0;">→</span><span>Visualize and communicate modeling results</span></li>
+        </ul>
+      </div>
+
+      <div style="border-left:3px solid var(--a2); padding-left:14px;">
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:3px;">
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a2); font-weight:700; flex-shrink:0;">→</span><span>Routine meetings (local and global PMx)</span></li>
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a2); font-weight:700; flex-shrink:0;">→</span><span>Project team meetings and cross-functional discussions</span></li>
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a2); font-weight:700; flex-shrink:0;">→</span><span>Governance and regulatory interactions</span></li>
+        </ul>
+      </div>
+
+      <div style="border-left:3px solid var(--a3); padding-left:14px;">
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:3px;">
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a3); font-weight:700; flex-shrink:0;">→</span><span>Write population analysis reports</span></li>
+          <li style="font-size:0.63em; color:var(--sub); display:flex; gap:8px;"><span style="color:var(--a3); font-weight:700; flex-shrink:0;">→</span><span>Contribute to regulatory documents and briefings</span></li>
+        </ul>
+      </div>
+
+      <div style="border-left:3px solid var(--muted); padding-left:14px;">
+        <ul style="margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:3px;">
+          <li style="font-size:0.63em; color:var(--muted); display:flex; gap:8px;"><span style="font-weight:700; flex-shrink:0;">→</span><span>Learning new methods or tools</span></li>
+          <li style="font-size:0.63em; color:var(--muted); display:flex; gap:8px;"><span style="font-weight:700; flex-shrink:0;">→</span><span>Attending seminars or conferences</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin-top:0.7em; padding:6px 14px">
+    <p style="font-size:0.48em; margin:0; font-style:italic;">Indicative only — in practice the balance shifts substantially depending on project phase, regulatory timelines, and cross-functional demands.</p>
+  </div>
+</section>

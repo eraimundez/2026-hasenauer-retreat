@@ -1,0 +1,34 @@
+<!-- SLIDE — PD MODEL: AER -->
+<section style="padding-top:28px; padding-bottom:20px; font-size:0.82em;">
+  <h2>Asthma Exacerbation Rate (AER) Model</h2>
+
+  <!-- Data block -->
+  <div class="code-frag" style="border-color:var(--a2); margin-bottom:0.5em;">
+    <div class="cf-label" style="color:var(--a2);">PD data</div>
+    <span style="font-size:0.7em;"><strong>531 patients</strong> (placebo 138; treated 393) <br> discrete count events in 4 time bins (0–14, 15–28, 29–40, 41–52 weeks)</span>
+  </div>
+
+  <div class="fragment fade-in" style="margin-top:0.4em;">
+  <div class="cols cols-6040" style="align-items:start; grid-template-columns: 55% 43%;">
+    <div>
+      <div class="code-frag" style="border-color:var(--a2);">
+        <div class="cf-label" style="color:var(--a2);">Non-homogeneous Poisson-lognormal count model</div>
+        <code style="line-height:1.8;">log h(t) = LBase + log(E<sub>max</sub>) · C<sub>p</sub>(t) / (EC<sub>50</sub> + C<sub>p</sub>(t))<br>
+<small>h(t): exacerbation hazard at time t; C<sub>p</sub>(t): post-hoc individual PK predictions</small></code>
+      </div>
+      <ul style="margin-top:0.6em;">
+        <li>Emax parameterized as the maximal fold-change (ratio) </li>
+        <li>C<sub>p</sub>(t) driven by 2-cpt popPK model post-hoc estimates</li>
+        <li>Model-predicted AER derived from the count model</li>
+      </ul>
+      <p style="font-size:0.64em; font-weight:600; color:var(--muted); margin-top:0.6em;">Covariate search</p>
+      <p>- ≥3 prior exacerbations on baseline hazard</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:6px;">
+      <p style="font-size:0.56em; font-weight:600; color:var(--muted); margin:0;">Visual Predictive Check</p>
+      <img src="_img/vpc-aer.svg" alt="AER VPC" style="width:100%; display:block;"/>
+      <p style="font-size:0.42em; color:var(--muted); margin:0.3em 0 0.6em; line-height:1.4;">Red squares/lines: observed annualized AER; gray shading: 90% CI of model-predicted annualized AER.</p>
+    </div>
+  </div>
+  </div>
+</section>

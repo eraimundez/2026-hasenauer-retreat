@@ -1,0 +1,122 @@
+<!-- SLIDE — NLME STRUCTURE -->
+<section style="padding-top:28px; padding-bottom:16px; font-size:0.82em;">
+  
+
+  <div class="cols cols-2" style="margin-top:0.5em; align-items:start;">
+
+    <!-- Left: Context blocks + plot -->
+    <div style="display:flex; flex-direction:column; gap:0;">
+      <div class="block block--a1">
+        <div class="block__label">A Typical PK Dataset</div>
+        <div class="block__text">Clinical trial data is <strong>sparse by design</strong> — 2–5 blood draws per patient, not a dense time series. The population model pools across hundreds of patients to estimate PK parameters.</div>
+      </div>
+
+      <!-- Semilog PK plot -->
+      <div style="margin-top:10px;">
+        <div style="width:75%;">
+          <p style="font-size:0.55em; color:var(--muted); margin:0 0 4px 0; text-align:center;">Figure: Single IV dose PK profile from a Ph1 trial</p>
+        <svg viewBox="0 0 232 178" xmlns="http://www.w3.org/2000/svg" style="width:100%; font-family:Inter,sans-serif;">
+          <defs>
+            <clipPath id="plot-area"><rect x="42" y="12" width="180" height="143"/></clipPath>
+          </defs>
+
+          <!-- Plot background -->
+          <rect x="42" y="12" width="180" height="143" fill="#f9fafb" stroke="#e5e7eb" stroke-width="0.5"/>
+
+          <!-- Y gridlines (log scale): C = 1, 5, 10, 50, 100 -->
+          <line x1="42" y1="128" x2="222" y2="128" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+          <line x1="42" y1="93"  x2="222" y2="93"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+          <line x1="42" y1="78"  x2="222" y2="78"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+          <line x1="42" y1="43"  x2="222" y2="43"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+          <line x1="42" y1="27"  x2="222" y2="27"  stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+          <!-- X gridlines at weeks 1, 2, 3 (x = 42 + t/4.2*180) -->
+          <line x1="85"  y1="12" x2="85"  y2="155" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+          <line x1="128" y1="12" x2="128" y2="155" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+          <line x1="171" y1="12" x2="171" y2="155" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+
+          <!-- Axes -->
+          <line x1="42" y1="155" x2="222" y2="155" stroke="#6b7280" stroke-width="1"/>
+          <line x1="42" y1="12"  x2="42"  y2="155" stroke="#6b7280" stroke-width="1"/>
+
+          <!-- Y axis labels -->
+          <text x="39" y="131" text-anchor="end" font-size="7" fill="#9ca3af">1</text>
+          <text x="39" y="96"  text-anchor="end" font-size="7" fill="#9ca3af">5</text>
+          <text x="39" y="81"  text-anchor="end" font-size="7" fill="#9ca3af">10</text>
+          <text x="39" y="46"  text-anchor="end" font-size="7" fill="#9ca3af">50</text>
+          <text x="39" y="30"  text-anchor="end" font-size="7" fill="#9ca3af">100</text>
+
+          <!-- X axis labels (weeks, t=4.2 at right edge) -->
+          <text x="42"  y="163" text-anchor="middle" font-size="7" fill="#9ca3af">0</text>
+          <text x="85"  y="163" text-anchor="middle" font-size="7" fill="#9ca3af">1</text>
+          <text x="128" y="163" text-anchor="middle" font-size="7" fill="#9ca3af">2</text>
+          <text x="171" y="163" text-anchor="middle" font-size="7" fill="#9ca3af">3</text>
+          <text x="213" y="163" text-anchor="middle" font-size="7" fill="#9ca3af">4</text>
+
+          <!-- Axis titles -->
+          <text x="132" y="173" text-anchor="middle" font-size="7" fill="#6b7280">Time (weeks)</text>
+          <text transform="rotate(-90)" x="-83" y="9" text-anchor="middle" font-size="7" fill="#6b7280">Conc. (ng/mL)</text>
+
+          <!-- 6 subjects × 4 observations at day1, wk1, wk2, wk4 (x = 42 + t/4.2*180) -->
+          <g clip-path="url(#plot-area)" fill="#d1d5db" stroke="#9ca3af" stroke-width="0.8">
+            <circle cx="48" cy="38"  r="2.2"/><circle cx="85" cy="76"  r="2.2"/><circle cx="128" cy="92"  r="2.2"/><circle cx="213" cy="106" r="2.2"/>
+            <circle cx="48" cy="25"  r="2.2"/><circle cx="85" cy="63"  r="2.2"/><circle cx="128" cy="79"  r="2.2"/><circle cx="213" cy="93"  r="2.2"/>
+            <circle cx="48" cy="49"  r="2.2"/><circle cx="85" cy="87"  r="2.2"/><circle cx="128" cy="103" r="2.2"/><circle cx="213" cy="117" r="2.2"/>
+            <circle cx="48" cy="33"  r="2.2"/><circle cx="85" cy="71"  r="2.2"/><circle cx="128" cy="88"  r="2.2"/><circle cx="213" cy="102" r="2.2"/>
+            <circle cx="48" cy="42"  r="2.2"/><circle cx="85" cy="80"  r="2.2"/><circle cx="128" cy="97"  r="2.2"/><circle cx="213" cy="111" r="2.2"/>
+            <circle cx="48" cy="28"  r="2.2"/><circle cx="85" cy="66"  r="2.2"/><circle cx="128" cy="82"  r="2.2"/><circle cx="213" cy="96"  r="2.2"/>
+          </g>
+
+          <!-- Population mean curve — IV bolus biexponential, x = 42 + t/4.2*180 -->
+          <polyline clip-path="url(#plot-area)"
+            points="42,27 48,36 54,44 66,58 85,74 106,85 128,90 149,95 171,98 192,101 213,104"
+            fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+
+          <!-- Legend (inside plot, top-right, 1 column) -->
+          <rect x="154" y="16" width="64" height="26" fill="white" fill-opacity="0.85" rx="2"/>
+          <circle cx="160" cy="24" r="2.2" fill="#d1d5db" stroke="#9ca3af" stroke-width="0.8"/>
+          <text x="165" y="27" font-size="6.5" fill="#9ca3af">PK samples</text>
+          <line x1="157" y1="35" x2="164" y2="35" stroke="#4f46e5" stroke-width="1.8"/>
+          <text x="167" y="38" font-size="6.5" fill="#6b7280">Population mean</text>
+        </svg>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: The hierarchical model -->
+    <div class="fragment fade-in">
+      <div class="block block--a1">
+        <div class="block__label">A Typical PopPK Model</div>
+        <div class="block__text">
+          <strong>Level 1 — Structural (2-cmt, IV bolus)</strong>
+          <div class="code-frag" style="margin:0.3em 0;">
+            <div style="line-height:0.25;">
+              <code>dA<sub>c</sub>/dt = −(CL/V<sub>1</sub>) · A<sub>c</sub> − (Q/V<sub>1</sub>) · A<sub>c</sub> + (Q/V<sub>2</sub>) · A<sub>p</sub></code><br>
+              <code>dA<sub>p</sub>/dt = &nbsp;(Q/V<sub>1</sub>) · A<sub>c</sub> − (Q/V<sub>2</sub>) · A<sub>p</sub></code>
+            </div>
+            <div style="margin-top:0.5em;"><code>C = A<sub>c</sub> / V<sub>1</sub> <br> A<sub>c</sub>(0) = Dose, &nbsp;A<sub>p</sub>(0) = 0</code></div>
+          </div>
+          Central ⇄ peripheral; elimination only from central.
+          <br><br>
+          <strong>Level 2 — Between-subject variability (BSV)</strong>
+          <div class="code-frag" style="margin:0.3em 0"><code>p<sub>i</sub> = p<sub>pop</sub> · exp(η<sub>i</sub>),&nbsp;&nbsp;η<sub>i</sub> ~ 𝒩(0, ω<sub>p</sub>²)</code></div>
+          For each PK parameter (CL, V<sub>1</sub>, Q, …) — if supported by data
+          <br><br>
+          <strong>Level 3 — Residual unexplained variability (RUV)</strong>
+          <div class="code-frag" style="margin:0.3em 0"><code>Y<sub>ij</sub> = f(θ<sub>i</sub>, t<sub>ij</sub>) · (1 + ε<sub>ij</sub>),&nbsp;&nbsp;ε<sub>ij</sub> ~ 𝒩(0, σ²)</code></div>
+        </div>
+      </div>
+      <div style="margin-top:0.5em; display:flex; flex-wrap:wrap; gap:6px;">
+        <span class="tag">NONMEM</span>
+        <span class="tag">Monolix</span>
+        <span class="tag">Pumas</span>
+        <span class="tag">NoLimits.jl 😊</span>
+        <span class="tag">nlmixr2</span>
+        <span class="tag">Stan</span>
+      </div>
+    </div>
+
+  </div>
+</section>
