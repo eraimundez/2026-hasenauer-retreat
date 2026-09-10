@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="669.53503mm"
+   height="362.3775mm"
+   viewBox="0 0 669.53503 362.3775"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="midd-platform.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="1276.5833"
+     inkscape:cy="756.78143"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1624"
+     inkscape:window-height="997"
+     inkscape:window-x="114"
+     inkscape:window-y="1695"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(231.92934,173.01747)">
+    <g
+       transform="matrix(0.73320132,0,0,0.73320132,-344.84234,-274.93245)"
+       id="g1061">
+      <path
+         d="M 367,398 C 367,281.468 459.453,187 573.5,187 687.547,187 780,281.468 780,398 780,514.532 687.547,609 573.5,609 459.453,609 367,514.532 367,398 Z"
+         fill="#dcd5e2"
+         fill-rule="evenodd"
+         id="path833" />
+      <path
+         d="m 512.5,395 c 0,-33.965 27.535,-61.5 61.5,-61.5 33.966,0 61.5,27.535 61.5,61.5 0,33.966 -27.534,61.5 -61.5,61.5 -33.965,0 -61.5,-27.534 -61.5,-61.5 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path835" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="16px"
+         transform="translate(548.051,391)"
+         id="text837">MIDD</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="16px"
+         transform="translate(534.384,409)"
+         id="text839">Platform</text>
+      <path
+         d="M 574.226,333.5 V 302.347"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path841" />
+      <path
+         d="m 522.5,269.5 c 0,-18.225 23.057,-33 51.5,-33 28.443,0 51.5,14.775 51.5,33 0,18.225 -23.057,33 -51.5,33 -28.443,0 -51.5,-14.775 -51.5,-33 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path843" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(555.534,260)"
+         id="text845">AI/ML</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(555.507,273)"
+         id="text847">based</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(540.327,286)"
+         id="text849">predictions</text>
+      <path
+         d="m 621.444,356.465 23.181,-18.494"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path851" />
+      <path
+         d="m 625.5,312.5 c 0,-18.225 23.057,-33 51.5,-33 28.443,0 51.5,14.775 51.5,33 0,18.225 -23.057,33 -51.5,33 -28.443,0 -51.5,-14.775 -51.5,-33 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path853" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(649.336,310)"
+         id="text855">Empirical</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(658.196,323)"
+         id="text857">PK/PD</text>
+      <path
+         d="m 635.5,395.226 h 13.382"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path859" />
+      <path
+         d="m 648.5,395.5 c 0,-18.225 23.057,-33 51.5,-33 28.443,0 51.5,14.775 51.5,33 0,18.225 -23.057,33 -51.5,33 -28.443,0 -51.5,-14.775 -51.5,-33 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path861" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(679.186,386)"
+         id="text863">Semi</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(709.5,386)"
+         id="text865">-</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(714.946,386)"
+         id="text867">/</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(664.146,399)"
+         id="text869">mechanistic</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(681.053,412)"
+         id="text871">PK/PD</text>
+      <path
+         d="m 620.401,434.586 24.619,20.74"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path873" />
+      <path
+         d="m 625.5,482.5 c 0,-18.225 23.057,-33 51.5,-33 28.443,0 51.5,14.775 51.5,33 0,18.225 -23.057,33 -51.5,33 -28.443,0 -51.5,-14.775 -51.5,-33 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path875" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(660.753,486)"
+         id="text877">PBPK</text>
+      <path
+         d="m 573.774,456.5 v 31.825"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path879" />
+      <path
+         d="m 522.5,522 c 0,-18.501 23.057,-33.5 51.5,-33.5 28.443,0 51.5,14.999 51.5,33.5 0,18.502 -23.057,33.5 -51.5,33.5 -28.443,0 -51.5,-14.998 -51.5,-33.5 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path881" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(541.794,519)"
+         id="text883">Population</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(565.507,532)"
+         id="text885">PK</text>
+      <path
+         d="m 525.781,434.133 -25.883,21.384"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path887" />
+      <path
+         d="m 417.5,482.5 c 0,-18.225 23.057,-33 51.5,-33 28.443,0 51.5,14.775 51.5,33 0,18.225 -23.057,33 -51.5,33 -28.443,0 -51.5,-14.775 -51.5,-33 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path889" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(436.79,480)"
+         id="text891">Population</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(449.543,493)"
+         id="text893">PK/PD</text>
+      <path
+         d="M 512.5,395.774 H 499.118"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path895" />
+      <path
+         d="m 395.5,395.5 c 0,-18.225 23.057,-33 51.5,-33 28.443,0 51.5,14.775 51.5,33 0,18.225 -23.057,33 -51.5,33 -28.443,0 -51.5,-14.775 -51.5,-33 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path897" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(416.272,386)"
+         id="text899">Exposure</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(471.825,386)"
+         id="text901">-</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(419.638,399)"
+         id="text903">response</text>
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(420.745,412)"
+         id="text905">analyses</text>
+      <path
+         d="M 524.995,356.617 501.388,337.905"
+         stroke="#1a003b"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path907" />
+      <path
+         d="m 417.5,312.5 c 0,-18.225 23.057,-33 51.5,-33 28.443,0 51.5,14.775 51.5,33 0,18.225 -23.057,33 -51.5,33 -28.443,0 -51.5,-14.775 -51.5,-33 z"
+         stroke="#ffffff"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path909" />
+      <text
+         fill="#ffffff"
+         font-family="Verdana, Verdana_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(450.626,317)"
+         id="text911">MBMA</text>
+      <path
+         d="m 217,224 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 221 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#268600"
+         fill-rule="evenodd"
+         id="path913" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(276.033,236)"
+         id="text915">Historical knowledge</text>
+      <path
+         d="m 193,252 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 197 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#268600"
+         fill-rule="evenodd"
+         id="path917" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(231.849,264)"
+         id="text919">Biology/Pathophysiology</text>
+      <path
+         d="m 171,293.167 c 0,-2.301 1.866,-4.167 4.167,-4.167 h 187.666 c 2.302,0 4.167,1.866 4.167,4.167 v 16.666 c 0,2.301 -1.865,4.167 -4.167,4.167 H 175.167 C 172.866,314 171,312.134 171,309.833 Z"
+         fill="#1b6000"
+         fill-rule="evenodd"
+         id="path921" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(204.882,306)"
+         id="text923">Nonclinical in vitro/in vivo</text>
+      <path
+         d="m 161,321 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 165 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#1b6000"
+         fill-rule="evenodd"
+         id="path925" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(246.575,333)"
+         id="text927">Predicted PK/PD</text>
+      <path
+         d="m 157,364 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 161 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path929" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(181.698,376)"
+         id="text931">PK/PD (Healthy volunteers)</text>
+      <path
+         d="m 154,392 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 158 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path933" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(174.981,404)"
+         id="text935">PK/PD (Patient populations)</text>
+      <path
+         d="m 159,448.167 c 0,-2.301 1.866,-4.167 4.167,-4.167 h 187.666 c 2.302,0 4.167,1.866 4.167,4.167 v 16.666 c 0,2.301 -1.865,4.167 -4.167,4.167 H 163.167 C 160.866,469 159,467.134 159,464.833 Z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path937" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(209.082,461)"
+         id="text939">Patient characteristics</text>
+      <path
+         d="m 166,476 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 170 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path941" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(253.508,488)"
+         id="text943">Extrinsic factors</text>
+      <path
+         d="m 154,420.167 c 0,-2.301 1.866,-4.167 4.167,-4.167 h 187.666 c 2.302,0 4.167,1.866 4.167,4.167 v 16.666 c 0,2.301 -1.865,4.167 -4.167,4.167 H 158.167 C 155.866,441 154,439.134 154,436.833 Z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path945" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(198.85,432)"
+         id="text947">Disease characteristics</text>
+      <path
+         d="m 178,504.167 c 0,-2.301 1.866,-4.167 4.167,-4.167 h 187.666 c 2.302,0 4.167,1.866 4.167,4.167 v 16.666 c 0,2.301 -1.865,4.167 -4.167,4.167 H 182.167 C 179.866,525 178,523.134 178,520.833 Z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path949" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(237.51,517)"
+         id="text951">Clinical efficacy data</text>
+      <path
+         d="m 195,533 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 199 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path953" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(265.245,545)"
+         id="text955">Clinical safety data</text>
+      <path
+         d="m 218,562 c 0,-2.209 1.791,-4 4,-4 h 188 c 2.209,0 4,1.791 4,4 v 16 c 0,2.209 -1.791,4 -4,4 H 222 c -2.209,0 -4,-1.791 -4,-4 z"
+         fill="#134200"
+         fill-rule="evenodd"
+         id="path957" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="13px"
+         transform="translate(301.043,574)"
+         id="text959">RCT clinical data</text>
+      <path
+         d="m 695,194.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 275.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 698.667 C 696.642,213 695,211.358 695,209.333 Z"
+         fill="#c492ff"
+         fill-rule="evenodd"
+         id="path961" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(710.323,206)"
+         id="text963">In silico PK/PD predictions</text>
+      <path
+         d="m 772.5,281.167 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 194.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 776.167 c -2.025,0 -3.667,-1.642 -3.667,-3.667 z"
+         stroke="#370077"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path965" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(787.77,292)"
+         id="text967">Dose selection for FIH</text>
+      <path
+         d="m 759,256.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 208.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 762.667 C 760.642,275 759,273.358 759,271.333 Z"
+         fill="#c492ff"
+         fill-rule="evenodd"
+         id="path969" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(774.398,268)"
+         id="text971">In silico DDI predictions</text>
+      <path
+         d="m 784,307.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 181.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 787.667 C 785.642,326 784,324.358 784,322.333 Z"
+         fill="#c492ff"
+         fill-rule="evenodd"
+         id="path973" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(799.334,319)"
+         id="text975">In silico clinical DDI predictions</text>
+      <path
+         d="m 792.5,339.167 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 174.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 796.167 c -2.025,0 -3.667,-1.642 -3.667,-3.667 z"
+         stroke="#370077"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path977" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(807.297,350)"
+         id="text979">Phase 2 dose selection</text>
+      <path
+         d="m 796.5,407.333 c 0,-2.117 1.716,-3.833 3.833,-3.833 h 170.334 c 2.117,0 3.833,1.716 3.833,3.833 v 15.334 c 0,2.117 -1.716,3.833 -3.833,3.833 H 800.333 c -2.117,0 -3.833,-1.716 -3.833,-3.833 z"
+         stroke="#370077"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path981" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(811.425,418)"
+         id="text983">Phase 3 dose selection</text>
+      <path
+         d="m 758.5,533.167 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 209.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 762.167 c -2.025,0 -3.667,-1.642 -3.667,-3.667 z"
+         stroke="#370077"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path985" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(773.567,544)"
+         id="text987">Final Dose justification</text>
+      <path
+         d="m 789,456.833 c 0,-2.117 1.716,-3.833 3.833,-3.833 h 177.334 c 2.117,0 3.833,1.716 3.833,3.833 v 15.334 c 0,2.117 -1.716,3.833 -3.833,3.833 H 792.833 C 790.716,476 789,474.284 789,472.167 Z"
+         fill="#5500b9"
+         fill-rule="evenodd"
+         id="path989" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(804.97,468)"
+         id="text991">DDI bridging/waivers</text>
+      <path
+         d="m 782,482.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 185.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 785.667 C 783.642,501 782,499.358 782,497.333 Z"
+         fill="#5500b9"
+         fill-rule="evenodd"
+         id="path993" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(797.606,494)"
+         id="text995">HI/RI prediction/bridging</text>
+      <path
+         d="m 796,381.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 171.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 799.667 C 797.642,400 796,398.358 796,396.333 Z"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path997" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(811.425,393)"
+         id="text999">Pediatric dose prediction</text>
+      <path
+         d="m 771,507.833 c 0,-2.117 1.716,-3.833 3.833,-3.833 h 197.334 c 2.117,0 3.833,1.716 3.833,3.833 v 15.334 c 0,2.117 -1.716,3.833 -3.833,3.833 H 774.833 C 772.716,527 771,525.284 771,523.167 Z"
+         fill="#5500b9"
+         fill-rule="evenodd"
+         id="path1001" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(786.938,519)"
+         id="text1003">Pediatric extrapolation</text>
+      <path
+         d="m 693,594.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 277.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 696.667 C 694.642,613 693,611.358 693,609.333 Z"
+         fill="#5c00ad"
+         fill-rule="evenodd"
+         id="path1005" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(708.516,606)"
+         id="text1007">Regulatory Q&amp;A</text>
+      <path
+         d="m 796,431.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 171.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 799.667 C 797.642,450 796,448.358 796,446.333 Z"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path1009" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(811.054,443)"
+         id="text1011">Study design optimization</text>
+      <path
+         d="m 736,557.667 c 0,-2.025 1.642,-3.667 3.667,-3.667 h 233.666 c 2.025,0 3.667,1.642 3.667,3.667 v 14.666 c 0,2.025 -1.642,3.667 -3.667,3.667 H 739.667 C 737.642,576 736,574.358 736,572.333 Z"
+         fill="#8a26ff"
+         fill-rule="evenodd"
+         id="path1013" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(751.613,569)"
+         id="text1015">Competitive differentiation</text>
+      <path
+         d="m 738,230.833 c 0,-2.117 1.716,-3.833 3.833,-3.833 h 229.334 c 2.117,0 3.833,1.716 3.833,3.833 v 15.334 c 0,2.117 -1.716,3.833 -3.833,3.833 H 741.833 C 739.716,250 738,248.284 738,246.167 Z"
+         fill="#8a26ff"
+         fill-rule="evenodd"
+         id="path1017" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="12px"
+         transform="translate(753.891,242)"
+         id="text1019">Competitive assessment</text>
+      <path
+         d="m 1066,268 v 41.8 L 1031.5,325 997,309.8 V 268 l 34.5,15.2 z"
+         fill="#bfbfbf"
+         fill-rule="evenodd"
+         id="path1021" />
+      <text
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1022.45,300)"
+         id="text1023">M2</text>
+      <path
+         d="m 1066,312 v 59.847 L 1031.5,388 997,371.847 V 312 l 34.5,16.153 z"
+         fill="#b8b8b8"
+         fill-rule="evenodd"
+         id="path1025" />
+      <text
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1008.03,354)"
+         id="text1027">Phase 1</text>
+      <path
+         d="m 1066,375 v 83.848 L 1031.5,475 997,458.848 V 375 l 34.5,16.152 z"
+         fill="#a6a6a6"
+         fill-rule="evenodd"
+         id="path1029" />
+      <text
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1008.03,429)"
+         id="text1031">Phase 2</text>
+      <path
+         d="M 1066,462 V 572.848 L 1031.5,589 997,572.848 V 462 l 34.5,16.152 z"
+         fill="#7f7f7f"
+         fill-rule="evenodd"
+         id="path1033" />
+      <text
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1008.03,530)"
+         id="text1035">Phase 3</text>
+      <path
+         d="m 1066.5,575.5 v 40.366 L 1032,632.5 997.5,615.866 V 575.5 l 34.5,16.634 z"
+         stroke="#23004c"
+         stroke-width="1.33333"
+         stroke-miterlimit="8"
+         fill="#23004c"
+         fill-rule="evenodd"
+         id="path1037" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1009.97,604)"
+         id="text1039">Submi</text>
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1048.97,604)"
+         id="text1041">-</text>
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1015.47,620)"
+         id="text1043">ssion</text>
+      <rect
+         x="231"
+         y="139"
+         width="174"
+         height="38"
+         fill="#23004c"
+         id="rect1045" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="16px"
+         transform="translate(278.599,163)"
+         id="text1047">Data/Input</text>
+      <rect
+         x="750"
+         y="139"
+         width="174"
+         height="37"
+         fill="#23004c"
+         id="rect1049" />
+      <text
+         fill="#ffffff"
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="16px"
+         transform="translate(811.416,163)"
+         id="text1051">Impact</text>
+      <path
+         d="M 1066,187 V 302.6 L 1031.5,321 997,302.6 V 187 l 34.5,18.4 z"
+         fill="#bfbfbf"
+         fill-rule="evenodd"
+         id="path1053" />
+      <text
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1019.2,250)"
+         id="text1055">Pre</text>
+      <text
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1039.36,250)"
+         id="text1057">-</text>
+      <text
+         font-family="Aptos, Aptos_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="13px"
+         transform="translate(1009.36,266)"
+         id="text1059">clinical</text>
+    </g>
+  </g>
+</svg>
