@@ -3,6 +3,8 @@
 **Presenter:** Elba Raimúndez  
 **Event:** Hasenauer Lab Retreat · September 2026
 
+**Slides:** [eraimundez.github.io/2026-hasenauer-retreat/slides.html](https://eraimundez.github.io/2026-hasenauer-retreat/slides.html)
+
 ---
 
 ## Summary
