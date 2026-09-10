@@ -36,6 +36,7 @@
     .reveal .slides section {
       text-align: left;
       padding: 36px 64px 24px;
+      box-sizing: border-box;
     }
 
     /* ── Headings ─────────────────────────────────────────────── */
@@ -130,6 +131,7 @@
       align-items: start;
     }
     .cols > * { min-width: 0; }
+    .cols > * > * { min-width: 0; max-width: 100%; }
     .cols-2    { grid-template-columns: 1fr 1fr; }
     .cols-3    { grid-template-columns: 1fr 1fr 1fr; }
     .cols-6040 { grid-template-columns: 60% 38%; }
@@ -310,6 +312,7 @@
       font-size: 0.62em;
       line-height: 1.65;
       color: var(--sub);
+      overflow-wrap: break-word;
     }
     .block .block__text strong { font-weight: 600; color: var(--text); }
     .block .block__text em { font-style: italic; }
